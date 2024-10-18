@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formating Property</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            background-color: rgb(0, 255, 255, 0.2);
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+
+        .clip {
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: clip;
+            border: 1px solid black;
+        }
+
+        .ellipsis {
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid black;
+        }
+
+        dd {
+            margin: 10px;
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 10px;
+            outline: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="color">
+        <h2>1]color</h2>
+        <ol>
+            <li>Color Property is used to change color of text.</li>
+            <li>
+                <dl>
+                    <dt><Strong>Example: </Strong></dt>
+                    <dd><span style="color: red;">This is red color text</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="font-family">
+        <h2>2]font-family </h2>
+        <ol>
+            <li>Specifies the typeface (font) of the text.</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="font-family: Arial, Helvetica, sans-serif;">This text has Arial font-family</span>
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="font-size">
+        <h2>3]font-size</h2>
+        <ol>
+            <li>Specifies font-size of the text.</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="font-size: 20px;">This text has 20px font-size</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="font-weight">
+        <h2>4]font-weight</h2>
+        <ol>
+            <li>The font-weight property sets how thick or thin characters in text should be displayed</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="font-weight: bold;">This text has font-weight bold</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="font-style">
+        <h2>5]font-style</h2>
+        <ol>
+            <li>The font-style property is mostly used to specify italic text
+                <ul>
+                    <li><b>normal</b> - the text is shown normally</li>
+                    <li><b>italic</b> - the text is shown in italics</li>
+                    <li><b>oblique</b> - less supported.</li>
+                </ul>
+            </li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="font-style: italic;">This text has font style italic.</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="line-height">
+        <h2>6]line-height</h2>
+        <ol>
+            <li>The line-height property specifies the height of a line.</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="line-height: 200%;">This is a paragraph with a bigger line-height.The line height
+                            is here set to 200%.</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="letter-spacing">
+        <h2>7]letter-spacing</h2>
+        <ol>
+            <li>The letter-spacing property increases or decreases the space between characters in a text.</li>
+            <li>
+                <dl>
+                    <dt><strong>Example</strong></dt>
+                    <dd><span style="letter-spacing: 3px;"> this text has letter-spacing: 3px;</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="text-transform">
+        <h2>8]text-transform</h2>
+        <ol>
+            <li>The text-transform property controls the capitalization of text.</li>
+            <ul>
+                <li><b>uppercase: </b></li>
+                <li><b>lowercase: </b></li>
+                <li><b>capitalize: </b></li>
+            </ul>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="text-transform: uppercase;">-This text is Uppercase</span></dd>
+                    <dd><span style="text-transform: lowercase;">-This text is lowercase</span></dd>
+                    <dd><span style="text-transform: capitalize;">-This text is capitalize</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="text-decoration">
+        <h2>9]text-decoration</h2>
+        <ol>
+            <li>The text-decoration property specifies the decoration added to text</li>
+            <ul>
+                <li><b>overline </b></li>
+                <li><b>line-through </b></li>
+                <li><b>underline </b></li>
+                <li><b>none </b></li>
+            </ul>
+            <li>
+                <dl style="line-height: 150%;">
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="text-decoration: underline;">This text has underline</span></dd>
+                    <dd><span style="text-decoration: overline;">This text has overline</span></dd>
+                    <dd><span style="text-decoration: line-through;">This text has line-through</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="text-align">
+        <h2>10]text-align</h2>
+        <ol>
+            <li>The text-align property specifies the horizontal alignment of text in an element.</li>
+            <ul>
+                <li><b>center </b></li>
+                <li><b>left </b></li>
+                <li><b>right </b></li>
+                <li><b>justify </b></li>
+            </ul>
+            <li><strong>Example: </strong></li>
+            <div style="text-align: center;max-width: 500px;">text-align: center;</div>
+            <div style="text-align:right;max-width: 500px;">text-align:right;</div>
+        </ol>
+    </section>
+    <section id="text-shadow">
+        <h2>11]text-shadow</h2>
+        <ol>
+            <li>text-shadow property adds shadow to text</li>
+            <li><code>text-shadow: h-shadow v-shadow blur-radius color;</code></li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="text-shadow: 5px 5px 5px blue;">This text has shadow</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="word-spacing">
+        <h2>12]word-spacing</h2>
+        <ol>
+            <li>Specify the space between words.</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="word-spacing: 30px;">This text has word-spacing of 30px</span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="text-indent">
+        <h2>13]text-indent</h2>
+        <ol>
+            <li>The text-indent specifies the indentation of the first line in the text-block</li>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd>
+                        <div style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloremque aliquam est eum eos corporis excepturi, veniam molestiae, incidunt possimus
+                            labore nobis blanditiis quo. Quam tempora deleniti repellendus sint obcaecati optio?</div>
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="white-space">
+        <h2>14]white-space</h2>
+        <ol>
+            <li>The white-space property specifies how white-space inside an element is handled.</li>
+            <ul>
+                <li><b>normal: </b>default</li>
+                <li><b>nowrap: </b>collapse spaces but text will not wrap</li>
+                <li><b>pre: </b>Preserve spaces and newline,no wrapping.</li>
+                <li><b>pre-wrap: </b>preserve spaces and new line but wrap text.</li>
+                <li><b>pre-line: </b>Collapses spaces, and newlines, wraps text</li>
+            </ul>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd><span style="white-space: pre-wrap;">This is and text with
+                            property white-space: pre-wrap;
+                        </span></dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="word-wrap">
+        <h2>15]word-wrap</h2>
+        <ol>
+            <li>The word-wrap property allows long words to be able to be broken and wrap onto the next line</li>
+            <ul>
+                <li><b>normal: </b>default</li>
+                <li><b>break-word: </b>Allows unbreakable word to be broken.</li>
+            </ul>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd>
+                        <div style="word-wrap: break-word;width: 100px;">
+                            Thisisalongwordwehaveusepropertyword-wrap:break-word</div>
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+    <section id="text-overflow">
+        <h2>16]text-overflow</h2>
+        <ol>
+            <li>The text-overflow property specifies how overflow content that is not displayed should be signaled to
+                the user.It can be clipped,diaplay an ellipsis(...) or display a custom string</li>
+            <ul>
+                <li><b>clip: </b>default</li>
+                <li><b>ellipsis: </b>Render an ellipsis(...) to represent the clipped text</li>
+            </ul>
+            <li>
+                <dl>
+                    <dt><strong>Example: </strong></dt>
+                    <dd>
+                        <h3>text-overflow: clip;</h3>
+                        <div class="clip">This is clip text</div>
+                    </dd>
+                    <dd>
+                        <h3>text-overflow: ellipsis;</h3>
+                        <div class="ellipsis">This has ellipsis text</div>
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+    </section>
+</body>
+
+</html>

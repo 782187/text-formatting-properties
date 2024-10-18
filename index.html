@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formating Properties</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 'aside main main main main main main main main main main'
+            'footer footer footer footer footer footer footer footer footer footer footer';
+        }
+        h1 {
+            text-align: center;
+            -webkit-text-stroke: 2px red;
+            color: transparent;
+            background-clip: text;
+            font-size: 45px;
+            background-image: linear-gradient(45deg, blue 50%, lime 50%);
+            margin: 1%;
+        }
+        .navBar {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            background-color: aliceblue;
+            grid-area: aside;
+            height: 87vh;
+            overflow-y: scroll;
+        }
+
+        a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            background-color: rgba(71, 66, 66, 0.2);
+            padding: 10px;
+            margin-top: 2px;
+            transition: all 0.5s ease;
+        }
+
+        a:hover {
+            background-color: gray;
+        }
+
+        .main {
+            grid-area: main;
+            width: 100%;
+            height: 87vh;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px;
+            background-color: aliceblue;
+            grid-area: footer;
+            font-size: 20px;
+        }
+        #copy{
+            font-weight: bold;
+        }
+        @media screen and (max-width: 670px) {
+            h1{
+                font-size: 30px;
+            }
+            .container {
+                display: grid;
+                grid-template-areas: 'aside aside main main main main'
+                'footer footer footer footer footer footer';
+            }
+            a{
+                margin-top: 15px;
+                background-color: aliceblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Formating Properties</h1>
+    <div class="container">
+        <nav class="navBar">
+            <a href="text_formating_properties.html#color" target="iframe1">color</a>
+            <a href="text_formating_properties.html#font-family" target="iframe1">font-family</a>
+            <a href="text_formating_properties.html#font-size" target="iframe1">font-size</a>
+            <a href="text_formating_properties.html#font-weight" target="iframe1">font-weight</a>
+            <a href="text_formating_properties.html#font-style" target="iframe1">font-style</a>
+            <a href="text_formating_properties.html#line-height" target="iframe1">line-height</a>
+            <a href="text_formating_properties.html#letter-spacing" target="iframe1">letter-spacing</a>
+            <a href="text_formating_properties.html#text-transform" target="iframe1">text-transform</a>
+            <a href="text_formating_properties.html#text-decoration" target="iframe1">text-decoration</a>
+            <a href="text_formating_properties.html#text-align" target="iframe1">text-align</a>
+            <a href="text_formating_properties.html#text-shadow" target="iframe1">text-shadow</a>
+            <a href="text_formating_properties.html#word-spacing" target="iframe1">word-spacing</a>
+            <a href="text_formating_properties.html#text-indent" target="iframe1">text-indent</a>
+            <a href="text_formating_properties.html#white-space" target="iframe1">white-space</a>
+            <a href="text_formating_properties.html#word-wrap" target="iframe1">word-wrap</a>
+            <a href="text_formating_properties.html#text-overflow" target="iframe1">text-overflow</a>
+        </nav>
+        <iframe class="main" src="text_formating_properties.html" name="iframe1" frameborder="1"></iframe>
+        <footer class="footer">&copy;<span id="copy"></span> All Right reserved by UpSkill IT Hub <br>
+            <a href="mailto:avinash83w@gmail.com" style="all: unset;text-decoration: underline;color: blue;">mailto:avinash83w@gmail.com</a>
+        </footer>
+    </div>
+
+    <script>
+        let date = new Date();
+        document.getElementById("copy").innerHTML=date.getFullYear();
+    </script>
+</body>
+
+</html>
